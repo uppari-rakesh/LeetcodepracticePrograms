@@ -1,0 +1,10 @@
+def power(x,n):
+    if n!=0:
+        return x * power (x,n-1)
+    else:
+        return 1
+    x=float (input("enter the base(x):"))
+    n=int(input("enter the exponent (n):"))
+    result=power (x,n)
+    print(f"{x}raised to the power {n}is{result}")
+    
